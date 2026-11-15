@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b1120;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Institutional Deep-Slate Surface Cards (8px-12px radius, subtle elevation & hairline slate borders) */
+.terminal-card {
+  background: #131c2e;
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  box-shadow: 0 10px 30px -12px rgba(2, 6, 23, 0.65);
+  transition: border-color 180ms cubic-bezier(0.16, 1, 0.3, 1), background-color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.terminal-card-interactive:hover {
+  background: #172236;
+  border-color: rgba(59, 130, 246, 0.42);
+}
+
+.terminal-card-emerald {
+  background: #131c2e;
+  border: 1px solid rgba(16, 185, 129, 0.32);
+  box-shadow: 0 10px 30px -12px rgba(16, 185, 129, 0.16);
+}
+
+.terminal-card-crimson {
+  background: #131c2e;
+  border: 1px solid rgba(239, 68, 68, 0.32);
+  box-shadow: 0 10px 30px -12px rgba(239, 68, 68, 0.16);
+}
+
+.terminal-card-blue {
+  background: #131c2e;
+  border: 1px solid rgba(59, 130, 246, 0.32);
+  box-shadow: 0 10px 30px -12px rgba(37, 99, 235, 0.2);
+}
+
+.terminal-inset {
+  background: #0f172a;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+/* Subtle scrollbar for institutional dark panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1120;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}

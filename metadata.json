@@ -1,0 +1,6 @@
+{
+  "name": "Deriv Quant Crawler",
+  "description": "Autonomous Deriv synthetic & forex market crawling agents with multi-indicator tick analysis, auto-market switching, and Martingale execution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
